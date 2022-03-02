@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
+                  Menu
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#gyermekkora">Gyermekkora</a></li>
@@ -40,7 +40,7 @@
 
       <h2 id="gyermekkora">Gyermekkora</h2>
 
-      <p>Született: 1635. július 18. Freshwater, Wight-sziget, Anglia. Apja, John Hooke káplán. Anyja, Cecily Gyles. 4 testvére volt. Robertnek azt szánták, hogy iskoláinak sikeres elvégzése után apja egyházához csatlakozik. Szülei viszont attól tartva, hogy nem éri meg a felnőttkort, lemondtak képzéséről és hagyták, hogy kedvteléseinek éljen.</p>
+      <p>Született: 1635. július 18. Freshwater, Wight-sziget, Anglia. Apja, John Hooke káplán. Anyja, Cecily Gyles. 4 testvére volt. Robertnek azt szánták, hogy iskoláinak sikeres elvégzése után apja egyházához csatlakozik. Szülei viszont attól tartva, hogy nem éri meg a felnőttkort, lemondtak képzéséről és hagyták, hogy kedvteléseinek éljen.</p>
 
       <h2 id="iskolai">Iskolái</h2>
 
@@ -55,6 +55,25 @@
       <p>Folyadékos vízszintező (libella). Alkoholhőmérő. Szélmérő. Fonalkeresztes, mikrométerrel ellátott, irányzásra szolgáló távcsövek megalkotója. Először alkalmazta a lapos spirális hajszálrugót is óraszerkezetekben. Boyle kísérleteihez kapcsolódva az ő fejlesztéseként jött létre az a levegőszivattyú, ami kiemelkedően a legjobb hatásfokú volt saját korában, és komoly ipari alkalmazásai is lettek a következő évszázadban. A légritka tér emberi szervezetre gyakorolt hatását is tanulmányozta.</p>
     </div>
 
-      <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<button class="d-hide back-to-top" onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 </body>
 </html>
